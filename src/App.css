@@ -1,5 +1,31 @@
 * {
-    box-sizing: 0;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+/*.invisible {
+    visibility: hidden;
+}*/
+
+button {
+    width: fit-content;
+    margin: 10px;
+    background: none;
+    border: none;
+}
+
+.menu-icon {
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: black;
+}
+
+.menu-icon:hover {
+    color: #80fefe; /* or try #66fcf1 or #a0fefe */
+    transition: color 0.5s;
+}
+
+.blur {
+    filter: blur(10px);
 }

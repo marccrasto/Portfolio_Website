@@ -1,20 +1,24 @@
 import React from "react";
 import './Navbar.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 class Navbar extends React.Component {
     constructor(props) {
         super(props);
     }
 
+
     render() {
         return (
-            <div id="navbar" className="navbar">
+            <div id="navbar" className={`navbar ${this.props.visibility ? 'visible' : ''}`}>
+                <button id="btn" onClick={this.props.onClick}><FontAwesomeIcon className="close-icon" icon={faXmark}/></button>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Me</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Academic Work</a></li>
-                    <li><a href="">Resume</a></li>
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>About Me</li></a>
+                    <a href="#"><li>Projects</li></a>
+                    <a href="#"><li>Academic Work</li></a>
+                    <a href="#"><li>Resume</li></a>
                 </ul>
             </div>
         );
