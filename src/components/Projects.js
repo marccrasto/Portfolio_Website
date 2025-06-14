@@ -1,9 +1,9 @@
 import React from "react";
-import './About_me.css';
+import './Projects.css';
 import animation from "../animations/about_me.webm";
 
 
-class AboutMe extends React.Component {
+class Projects extends React.Component {
     constructor(props) {
         super(props)
     }
@@ -11,7 +11,7 @@ class AboutMe extends React.Component {
     render() {
         return (
             <div className="about-me">
-                <h1>About Me</h1>
+                <h1>Projects</h1>
                 <video loop autoPlay muted playsInline>
                     <source src={animation} type="video/webm" />
                 </video>
@@ -20,4 +20,4 @@ class AboutMe extends React.Component {
     }
 }
 
-export default AboutMe;
+export default Projects;

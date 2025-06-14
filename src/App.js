@@ -4,6 +4,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import AboutMe from './components/About_me';
+import Projects from './components/Projects';
 
 class App extends React.Component {
   constructor(props) {
@@ -28,6 +29,7 @@ class App extends React.Component {
         <div className={`app ${this.state.navbar ? 'blur': ''}`}>
           <button onClick={this.toggleNavbar}><FontAwesomeIcon className='menu-icon' icon={faBars}/></button>
           <AboutMe />
+          <Projects />
         </div>
         <Navbar visibility={this.state.navbar} onClick={this.toggleNavbar}/>
       </div>
