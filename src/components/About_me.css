@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Kalam:wght@400;700&family=Russo+One&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,11 +7,15 @@
 }
 
 .about-me {
-    background-color: tomato;
     height: 80vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     cursor: pointer;
+    justify-content: space-around;
+    font-family: 'Anta';
+    background-image: linear-gradient( rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5)), url('../backgrounds/about_me_background.jpg');
+    background-size: contain;
 }
 
 .about-me:hover h1{
@@ -20,11 +26,14 @@ h1 {
     transition: transform 0.4s;
     margin-left: 4rem;
     font-size: 4.5rem;
+    color: white;
 }
 
 video {
     transition: transform 0.4s;
-    margin-left: 2rem;
+    margin-left: 5rem;
+    width: 450;
+    height: 450px;
 }
 
 .about-me:hover video{

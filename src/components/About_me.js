@@ -12,7 +12,7 @@ class AboutMe extends React.Component {
         return (
             <div className="about-me">
                 <h1>About Me</h1>
-                <video autoPlay loop playsInline>
+                <video loop autoPlay playsInline>
                     <source src={animation} type="video/webm"/>
                 </video>
             </div>
