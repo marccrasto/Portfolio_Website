@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.about-me {
+    background-color: tomato;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.about-me:hover h1{
+    transform: scale(1.2);
+}
+
+h1 {
+    transition: transform 0.4s;
+    margin-left: 4rem;
+    font-size: 4.5rem;
+}
+
+video {
+    transition: transform 0.4s;
+    margin-left: 2rem;
+}
+
+.about-me:hover video{
+    transform: scale(1.2);
+}
