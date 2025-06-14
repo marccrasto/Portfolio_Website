@@ -12,14 +12,21 @@
     flex-direction: column;
     align-items: center;
     cursor: pointer;
-    justify-content: space-around;
     font-family: 'Anta';
-    background-image: linear-gradient( rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5)), url('../backgrounds/about_me_background.jpg');
-    background-size: contain;
+    background-image: url("../backgrounds/about_me_background.jpg");
+    background-size: 91.5%;
+    transition: background-size 0.4s ease;
+    overflow: hidden;
+}
+
+.about-me:hover {
+    background-size: 94%;
 }
 
 .about-me:hover h1{
-    transform: scale(1.2);
+    transform: scale(1.1);
+    color: #80fefe; /* or try #66fcf1 or #a0fefe */
+    transition: color 0.8s;
 }
 
 h1 {
@@ -27,15 +34,19 @@ h1 {
     margin-left: 4rem;
     font-size: 4.5rem;
     color: white;
+    margin-right: auto;
 }
 
 video {
     transition: transform 0.4s;
     margin-left: 5rem;
-    width: 450;
-    height: 450px;
+    width: 500;
+    height: 500px;
+    margin-right: auto;
+    margin-left: 20rem;
+    margin-top: 1rem;
 }
 
 .about-me:hover video{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
