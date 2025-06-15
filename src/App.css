@@ -29,3 +29,7 @@ button {
 .blur {
     filter: blur(10px);
 }
+
+.app {
+    display: flex;
+}

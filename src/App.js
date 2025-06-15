@@ -27,8 +27,8 @@ class App extends React.Component {
   render() {
     return (
       <div className='welcome-container'>
+        <button onClick={this.toggleNavbar}><FontAwesomeIcon className='menu-icon' icon={faBars}/></button>
         <div className={`app ${this.state.navbar ? 'blur': ''}`}>
-          <button onClick={this.toggleNavbar}><FontAwesomeIcon className='menu-icon' icon={faBars}/></button>
           <AboutMe />
           <Projects />
           <Academics />
