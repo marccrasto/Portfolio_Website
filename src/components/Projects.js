@@ -1,6 +1,5 @@
 import React from "react";
 import './Projects.css';
-import animation from "../animations/about_me.webm";
 
 
 class Projects extends React.Component {
@@ -10,11 +9,9 @@ class Projects extends React.Component {
 
     render() {
         return (
-            <div className="about-me">
+            <div className="projects">
                 <h1>Projects</h1>
-                <video loop autoPlay muted playsInline>
-                    <source src={animation} type="video/webm" />
-                </video>
+                
             </div>
         );
     }

@@ -6,29 +6,26 @@
     padding: 0;
 }
 
-.projects {
+.academics {
     height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     cursor: pointer;
     font-family: 'Anta';
-    background-image: url("../animations/projects-2.gif");
-    background-size: 50%;
+    background: linear-gradient(rgb(100,0,220),rgb(255,0,150));
     transition: background-size 0.4s ease;
     overflow: hidden;
 }
 
-.projects:hover {
-    background-size: 53.5%;
-}
 
-.projects:hover h1{
+
+.academics:hover h1{
     transform: scale(1.1);
     color: #80fefe; /* or try #66fcf1 or #a0fefe */
 }
 
-.projects h1 {
+.academics h1 {
     transition: transform 0.4s ease-in-out, color 0.8s;
     margin-left: 4rem;
     font-size: 4.5rem;
@@ -36,16 +33,16 @@
     margin-right: auto;
 }
 
-/*.projects video {
+.academics video {
     transition: transform 0.4s;
     margin-left: 5rem;
-    width: 500;
+    width: 500px;
     height: 500px;
     margin-right: auto;
-    margin-left: 20rem;
+    margin-left: auto;
     margin-top: 1rem;
 }
 
-.projects:hover video{
+.academics:hover video{
     transform: scale(1.077);
-}*/
+}
