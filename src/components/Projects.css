@@ -15,14 +15,16 @@
     cursor: pointer;
     font-family: 'Anta';
     background-image: url("../animations/projects-2.gif");
-    background-size: 145%;
-    background-position: 47%;
+    background-size: 140%;
+    background-position: 47% 150%;
+    background-repeat: no-repeat;
+    background-color: #824DA6;
     transition: background-size 0.4s ease;
     overflow: hidden;
 }
 
 .projects:hover {
-    background-size: 160%;
+    background-size: 144%;
 }
 
 .projects:hover h1{
