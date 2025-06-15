@@ -11,7 +11,7 @@ class Academics extends React.Component {
     render() {
         return (
             <div className="academics">
-                <h1>Projects</h1>
+                <h1>Academic Work</h1>
                 <video loop autoPlay muted playsInline>
                     <source src={animation} type="video/webm" />
                 </video>  
