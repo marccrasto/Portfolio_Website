@@ -6,6 +6,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import AboutMe from './components/About_me';
 import Projects from './components/Projects';
 import Academics from './components/Academic_work';
+import Footer from './components/Footer';
 
 class App extends React.Component {
   constructor(props) {
@@ -34,6 +35,7 @@ class App extends React.Component {
           <Academics />
         </div>
         <Navbar visibility={this.state.navbar} onClick={this.toggleNavbar}/>
+        <Footer />
       </div>
     );
   } 
