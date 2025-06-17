@@ -46,7 +46,7 @@ textarea {
 
 textarea {
     min-height: 140px;
-    resize: vertical;
+    resize: none;
 }
 
 button {
@@ -71,22 +71,24 @@ button:hover {
 .footer-right {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-end;
     text-align: right;
 }
 
 /* Right-side contact info */
 .contact-info h3 {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     font-family: 'Russo One';
     margin-bottom: 10px;
+    
 }
 
 .contact-info p {
     margin-bottom: 20px;
     color: #ccc;
     font-style: italic;
+    font-size: 20px;
 }
 
 .contact-info a {

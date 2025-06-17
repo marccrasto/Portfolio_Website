@@ -10,7 +10,7 @@ class AboutMe extends React.Component {
 
     render() {
         return (
-            <div className="about-me">
+            <div className="about-me" data-aos="fade-up" data-aos-delay="600">
                 <h1>About Me</h1>
                 <video loop autoPlay muted playsInline>
                     <source src={animation} type="video/webm" />

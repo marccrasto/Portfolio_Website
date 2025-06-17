@@ -12,7 +12,7 @@ class Footer extends React.Component {
 
     render() {
         return (
-            <footer className="footer">
+            <footer id="footer" className="footer">
                 <div className="footer-container">
                     <div className="footer-left" data-aos="fade-up">
                         <h2>Contact Me</h2>
@@ -27,17 +27,17 @@ class Footer extends React.Component {
                     <div className="footer-right" data-aos="fade-left">
                         <div className="contact-info">
                             <h3>Email</h3>
-                            <p><a href="mailto:marccrasto@gmail.com">marccrasto@gmail.com</a></p>
+                            <p><a href="mailto:marcalex458@gmail.com">marcalex458@gmail.com</a></p>
 
                             <h3>Location</h3>
-                            <p>Toronto, ON<br />Canada</p>
+                            <p>London, ON<br />Canada</p>
                         </div>
 
                         <div className="footer-icons">
                             <a href="https://github.com/marccrasto" target="_blank" rel="noreferrer">
                                 <FontAwesomeIcon icon={faGithub} />
                             </a>
-                            <a href="#" target="_blank" rel="noreferrer">
+                            <a href="https://www.linkedin.com/in/marc-crasto-95736b1b2/" target="_blank" rel="noreferrer">
                                 <FontAwesomeIcon icon={faLinkedin} />
                             </a>
                         </div>

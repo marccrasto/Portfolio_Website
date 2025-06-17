@@ -38,15 +38,18 @@ class App extends React.Component {
     return (
       <div className='welcome-container'>
         <div className="topbar">
-          <button onClick={this.toggleNavbar}>
-            <FontAwesomeIcon className='menu-icon' icon={faBars}/>
-          </button>
-          <div className="site-name">Marc Crasto</div>
+          <div className='topbar left'>
+            <button onClick={this.toggleNavbar}>
+              <FontAwesomeIcon className='menu-icon' icon={faBars}/>
+            </button>
+            <div className="site-name">Marc Crasto</div>
+          </div>
+          <p><a accesskey="c" href="#footer" className='contact'>Contact</a></p>
         </div>
         <div className="hero-section">
-          <h1>Hi, I'm Marc Crasto 👋</h1>
-          <p>Aspiring Full-Stack Developer | Passionate about AI & UI</p>
-          <a href="#projects" className="cta-button">View My Work ↓</a>
+          <h1 data-aos="fade-left" data-aos-delay="150">Hi, I'm Marc Crasto 👋</h1>
+          <p data-aos="fade-right" data-aos-delay="300">Aspiring Full-Stack Developer | Passionate about AI & UI</p>
+          <a href="#projects" className="cta-button" data-aos="fade-in" data-aos-delay="450">Meet me ↓</a>
         </div>
         <div className={`app ${this.state.navbar ? 'blur': ''}`}>
           <AboutMe />

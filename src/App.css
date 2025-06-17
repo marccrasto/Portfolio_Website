@@ -63,17 +63,17 @@ button {
 }
 
 .cta-button {
-    background-color: #80fefe;
+    background-color: #ffffff;
     padding: 10px 25px;
     border-radius: 25px;
     text-decoration: none;
     color: #1a0033;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    transition: all 0.5s ease;
 }
 
 .cta-button:hover {
-    background-color: #66fcf1;
+    background-color: #80fefe;
 }
 
 .topbar {
@@ -84,6 +84,25 @@ button {
     background-color: rgba(26, 0, 51, 0.95);
     padding: 10px 20px;
     z-index: 1000;
+    justify-content: space-between;
+}
+
+.topbar .left {
+    padding: 0;
+    background-color: transparent;
+}
+
+.contact {
+    text-decoration: none;
+    font-family: 'Russo One';
+    font-size: 1.5rem;
+    color: white;
+    margin-right: 15px;
+    transition: color 0.5s;
+}
+
+.contact:hover {
+    color: #66fcf1;
 }
 
 .site-name {
@@ -91,4 +110,11 @@ button {
     font-size: 1.8rem;
     margin-left: 15px;
     font-family: 'Russo One';
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
 }
