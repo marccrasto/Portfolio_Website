@@ -19,6 +19,7 @@ class App extends React.Component {
     }
 
     this.toggleNavbar = this.toggleNavbar.bind(this);
+    this.meetMe = this.meetMe.bind(this);
   }
 
   componentDidMount() {
@@ -26,11 +27,31 @@ class App extends React.Component {
       duration: 1000,
       once: true,
     });
+
+    window.addEventListener('scroll', this.handleScroll);
   }
+
+  handleScroll = () => {
+    const scrolled = window.scrollY;
+    if (scrolled > 300) {
+      this.setState({ showScrollButton: true });
+    } else {
+      this.setState({ showScrollButton: false });
+    }
+  };
+
+  meetMe = () => {
+    window.scrollTo({ top: 255, behavior: 'smooth'});
+  }
+
+scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
 
   toggleNavbar() {
     this.setState((state) => ({
-      navbar: !state.navbar
+      navbar: !state.navbar,
+      showScrollButton: false
     }));
   }
 
@@ -49,7 +70,7 @@ class App extends React.Component {
         <div className="hero-section">
           <h1 data-aos="fade-left" data-aos-delay="150">Hi, I'm Marc Crasto 👋</h1>
           <p data-aos="fade-right" data-aos-delay="300">Aspiring Full-Stack Developer | Passionate about AI & UI</p>
-          <a href="#projects" className="cta-button" data-aos="fade-in" data-aos-delay="450">Meet me ↓</a>
+          <a className="cta-button" data-aos="fade-in" data-aos-delay="450" onClick={this.meetMe}>Meet me ↓</a>
         </div>
         <div className={`app ${this.state.navbar ? 'blur': ''}`}>
           <AboutMe />
@@ -58,6 +79,11 @@ class App extends React.Component {
         </div>
         <Navbar visibility={this.state.navbar} onClick={this.toggleNavbar}/>
         <Footer />
+        {this.state.showScrollButton && (
+          <button className="scroll-to-top" onClick={this.scrollToTop}>
+            ↑
+          </button>
+        )}
       </div>
     );
   } 

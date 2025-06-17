@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Anta&family=Kalam:wght@400;700&family=Russo+One&display=swap');
 
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -19,10 +31,11 @@
     background-position: 47% 150%;
     background-repeat: no-repeat;
     background-color: #824DA6;
-    transition: background-size 0.4s ease, color 0.8s;
+    transition: background-size 0.4s ease-in-out;
     overflow: hidden;
     border-radius: 5px;
     border: 4px solid white;
+    animation: fade-up 1s;
 }
 
 .projects:hover {

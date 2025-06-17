@@ -10,7 +10,7 @@ class Academics extends React.Component {
 
     render() {
         return (
-            <div className="academics" data-aos="fade-up" data-aos-delay="600">
+            <div className="academics">
                 <h1>Academic Work</h1>
                 <video loop autoPlay muted playsInline>
                     <source src={animation} type="video/webm" />

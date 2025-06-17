@@ -9,7 +9,7 @@ class Projects extends React.Component {
 
     render() {
         return (
-            <div id="projects" className="projects" data-aos="fade-up" data-aos-delay="600">
+            <div id="projects" className="projects">
                 <h1>Projects</h1>
                 
             </div>
