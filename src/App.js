@@ -44,9 +44,9 @@ class App extends React.Component {
     window.scrollTo({ top: 255, behavior: 'smooth'});
   }
 
-scrollToTop = () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-};
+  scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   toggleNavbar() {
     this.setState((state) => ({
