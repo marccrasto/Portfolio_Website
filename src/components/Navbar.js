@@ -15,7 +15,7 @@ class Navbar extends React.Component {
                 <button id="btn" onClick={this.props.onClick}><FontAwesomeIcon className="close-icon" icon={faXmark}/></button>
                 <ul>
                     <a href="#" onClick={this.props.onClick}><li>Home</li></a>
-                    <a href="#"><li>About Me</li></a>
+                    <a href="../pages/About_me.js"><li>About Me</li></a>
                     <a href="#"><li>Projects</li></a>
                     <a href="#"><li>Academic Work</li></a>
                     <a href="#"><li>Resume</li></a>
