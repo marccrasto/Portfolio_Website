@@ -20,7 +20,7 @@
 
 .academics {
     height: 600px;
-    width: 30%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,4 +61,10 @@
 
 .academics:hover video{
     transform: scale(1.077);
+}
+
+.card-wrapper {
+  display: flex;
+  width: 30%;
+  text-decoration: none;
 }

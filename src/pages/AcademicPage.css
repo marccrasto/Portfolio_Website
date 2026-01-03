@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Kalam:wght@400;700&family=Russo+One&display=swap");
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fade-right {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fade-left {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.projects-page {
+  padding: 40px 6%;
+  color: white;
+}
+
+.projects-header {
+  text-align: center;
+  margin: 25px 0 40px;
+  font-family: "Kalam", cursive;
+}
+
+.projects-header h1 {
+  font-family: "Russo One", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  animation: fade-left 1s;
+}
+
+.projects-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  animation: fade-right 1s;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(240px, 1fr));
+  gap: 22px;
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  border: 3px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  min-height: 430px;
+  background: rgba(0, 0, 0, 0.2);
+  transition: transform 0.25s ease, border 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  border: 3px solid #80fefe;
+}
+
+.project-image {
+  height: 62%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.project-footer {
+  height: 38%;
+  padding: 18px 18px 20px;
+  background: rgba(138, 74, 220, 0.9);
+  font-family: "Anta", sans-serif;
+}
+
+.project-footer h2 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.project-subtitle {
+  margin-top: 6px;
+  opacity: 0.9;
+  font-family: "Kalam", cursive;
+  font-size: 1rem;
+}
+
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(18, 0, 33, 0.86);
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.overlay-content {
+  width: 100%;
+  max-width: 520px;
+  font-family: "Kalam", cursive;
+}
+
+.overlay-content h3 {
+  margin: 0 0 10px;
+  font-family: "Russo One", sans-serif;
+  color: #80fefe;
+  font-size: 2rem;
+}
+
+.overlay-content p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+
+.overlay-tags {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pill {
+  font-family: "Anta", sans-serif;
+  padding: 8px 12px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(128, 254, 254, 0.45);
+}
+
+.overlay-actions {
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.project-link {
+  font-family: "Anta", sans-serif;
+  padding: 10px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(128, 254, 254, 0.55);
+  transition: transform 0.2s ease, border 0.3s ease;
+}
+
+.project-link:hover {
+  transform: translateY(-2px);
+  border: 1px solid rgba(128, 254, 254, 1);
+}
+
+/* responsive */
+@media (max-width: 1100px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(240px, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import './Academic_work.css';
 import animation from "../animations/projects.webm"
+import { Link } from "react-router-dom";
 
 
 class Academics extends React.Component {
@@ -10,12 +11,14 @@ class Academics extends React.Component {
 
     render() {
         return (
-            <div className="academics">
-                <h1>Academic Work</h1>
-                <video loop autoPlay muted playsInline>
-                    <source src={animation} type="video/webm" />
-                </video>  
-            </div>
+            <Link to="/academic" reloadDocument className="card-wrapper">
+                <div className="academics">
+                    <h1>Academic Work</h1>
+                    <video loop autoPlay muted playsInline>
+                        <source src={animation} type="video/webm" />
+                    </video>  
+                </div>
+            </Link>
         );
     }
 }
