@@ -6,7 +6,9 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faPlay } from "@fortawesome/free-solid-svg-icons";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -62,8 +64,8 @@ class ProjectsPage extends React.Component {
           "Developing a vision–language model (VLM) for NSFW detection in 3D printing workflows",
         didTitle: "What did I do?",
         bullets: [
-          "Worked in a team of 7 to create an end-to-end NSFW detection system for 3D printing workflows, enabling automated screening of both textual prompts and image inputs before print execution",
-          "Researched and evaluated 10+ state-of-the-art vision–language model architectures; implemented and benchmarked a pretrained VLM against a custom-built VLM and CNN using Python and deep learning libraries, selecting the custom VLM based on performance gains",
+          "Worked in a team of 7 to create an NSFW detection system for 3D printing workflows, enabling screening of both textual prompts and image inputs before print execution",
+          "Researched and evaluated 10+ state-of-the-art vision–language model architectures; implemented a pretrained VLM using Python and deep learning libraries",
           "Collaborated with the Western 3D Printing Club to validate real-world use cases and presented the system and experimental results at CUCAI 2026",
         ],
         projectCard: {
@@ -86,7 +88,7 @@ class ProjectsPage extends React.Component {
         didTitle: "What did I do?",
         bullets: [
             "Developed a full-stack skin cancer detection application enabling end-to-end lesion classification, including real-time image capture and inference via a smartphone camera",
-            "Designed and trained a custom CNN in Python using PyTorch, informed by findings from 15 academic papers; preprocessed a 10,000-image Fitzpatrick dataset spanning 7 skin tones to improve model robustness and generalization",
+            "Designed and trained a custom CNN in Python using PyTorch, informed by findings from 15 academic papers; preprocessed a 10,000-image dataset spanning 7 skin tones",
             "Collaborated with a team of 7 developers and presented the completed system and experimental results at CUCAI 2026"
         ],
         projectCard: {
@@ -109,7 +111,7 @@ class ProjectsPage extends React.Component {
         didTitle: "What did I do?",
         bullets: [
             "Developed a real-time transit prediction application for London, Ontario, improving arrival time accuracy and reducing mean absolute error by 17% compared to Google Maps",
-            "Evaluated baseline models (linear regression, random forest) and researched four predictive architectures before implementing a bidirectional LSTM in Python using PyTorch; co-developed the frontend UI in React for real-time visualization",
+            "Evaluated baseline models (linear regression, random forest) and researched four predictive architectures before implementing a bidirectional LSTM using PyTorch",
             "Worked in a Scrum team of 7 and collaborated with Computer Science faculty to validate modeling choices and system design"
         ],
         projectCard: {
@@ -132,7 +134,7 @@ class ProjectsPage extends React.Component {
         didTitle: "What did I do?",
         bullets: [
             "Built and live-demoed a financial forecasting web application at CUCAI 2024, presenting to 340+ delegates and showcasing real-time forecast generation",
-            "Implemented the presentation and routing layers using Flask, HTML, and CSS, handling request routing, form submission, and dynamic rendering of forecast outputs for live demonstrations",
+            "Implemented the UI and routing layers using Flask, HTML, and CSS, handling request routing, form submission, and dynamic rendering of forecast outputs",
             "Worked in a two-person team to design, build, and deliver a production-ready demo under conference conditions"
         ],
         projectCard: {
@@ -172,10 +174,21 @@ class ProjectsPage extends React.Component {
             </div>
 
             {clubs.map((c, idx) => (
-              <div className="club-section" data-aos="fade-up" data-aos-delay="150" key={c.clubName}>
+              <div className="club-section" data-aos="fade-up" data-aos-delay="150" key={`${c.clubName}-${idx}`}>
                 <div className="club-title-row">
-                  <h2 data-aos="fade-right" data-aos-delay="150">{c.clubName}</h2>
-                  <div className="club-role" data-aos="fade-left" data-aos-delay="150">{c.roleLine}</div>
+                  <div className="club-title-left">
+                    <h2>{c.clubName}</h2>
+
+                    <div className="project-title-inline">
+                      <span className="project-name">{c.projectCard.title}</span>
+                      <span className="project-separator">·</span>
+                      <span className="project-subtitle">{c.projectCard.subtitle}</span>
+                    </div>
+                  </div>
+
+                  <div className="club-role">
+                    {c.roleLine}
+                  </div>
                 </div>
 
                 {/* 2-column layout */}
@@ -195,48 +208,6 @@ class ProjectsPage extends React.Component {
                         ))}
                       </ul>
                     </div>
-
-                    {/* Project card (hover overlay like you wanted) */}
-                    <div className="mini-card">
-                      <div className="mini-card-inner">
-                        <div className="mini-card-front">
-                          <div className="mini-card-title">
-                            <h4>{c.projectCard.title}</h4>
-                            <span>{c.projectCard.subtitle}</span>
-                          </div>
-                          <div className="mini-tags">
-                            {c.projectCard.tags.map((t) => (
-                              <span className="pill" key={t}>
-                                {t}
-                              </span>
-                            ))}
-                          </div>
-                          <div className="mini-hint">Hover for details</div>
-                        </div>
-
-                        <div className="mini-card-overlay">
-                          <p>{c.projectCard.description}</p>
-                          <div className="mini-actions">
-                            <a
-                              className="project-link"
-                              href={c.projectCard.github}
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              GitHub
-                            </a>
-                            <a
-                              className="project-link"
-                              href={c.projectCard.demo}
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              Demo
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </div>
 
                   {/* Right: image placeholder */}
@@ -249,6 +220,30 @@ class ProjectsPage extends React.Component {
                           Club / Team Photo
                         </div>
                       )}
+                    </div>
+                    {/* Project strip (Option 2) */}
+                    <div className="project-strip-right">
+                      <a
+                        className="project-icon-btn wide"
+                        href={c.projectCard.github}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="GitHub repository"
+                        title="GitHub"
+                      >
+                        <FontAwesomeIcon icon={faGithub} />
+                      </a>
+
+                      <a
+                        className="project-icon-btn wide"
+                        href={c.projectCard.demo}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Live demo"
+                        title="Demo"
+                      >
+                        <FontAwesomeIcon icon={faPlay} />
+                      </a>
                     </div>
                   </div>
                 </div>
