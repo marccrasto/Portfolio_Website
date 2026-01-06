@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Kalam:wght@400;700&family=Russo+One&display=swap");
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fade-right {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fade-left {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.work-page {
+  padding: 42px 6%;
+  color: white;
+}
+
+.work-header {
+  text-align: center;
+  margin: 25px 0 45px;
+  font-family: "Kalam", cursive;
+}
+
+.work-header h1 {
+  font-family: "Russo One", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  animation: fade-left 1s;
+}
+
+.work-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  animation: fade-right 1s;
+}
+
+.club-section {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.club-title-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin: 10px 0 18px;
+}
+
+.club-title-row h2 {
+  font-family: "Russo One", sans-serif;
+  font-size: 1.9rem;
+  margin: 0;
+}
+
+.club-role {
+  font-family: "Anta", sans-serif;
+  opacity: 0.85;
+}
+
+.club-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.club-grid.reverse {
+  grid-template-columns: 0.8fr 1.2fr;
+}
+
+.club-grid.reverse .club-left {
+  order: 2;
+}
+.club-grid.reverse .club-right {
+  order: 1;
+}
+
+.club-block {
+  background: rgba(18, 0, 33, 0.42);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 12px;
+  padding: 18px 18px;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.22);
+  margin-bottom: 14px;
+}
+
+.club-block h3 {
+  font-family: "Russo One", sans-serif;
+  color: #80fefe;
+  margin: 0 0 10px;
+  font-size: 1.35rem;
+}
+
+.club-block p,
+.club-block li {
+  font-family: "Kalam", cursive;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  opacity: 0.95;
+}
+
+.club-block ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+/* Right image placeholder */
+.club-image {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.15);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.25);
+  min-height: 260px;
+}
+
+.club-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.image-placeholder {
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Anta", sans-serif;
+  opacity: 0.85;
+}
+
+/* Mini project card with hover overlay */
+.mini-card {
+  margin-top: 10px;
+}
+
+.mini-card-inner {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.22);
+  background: rgba(138, 74, 220, 0.45);
+  transition: transform 0.2s ease, border 0.25s ease;
+}
+
+.mini-card-inner:hover {
+  transform: translateY(-2px);
+  border: 2px solid #80fefe;
+}
+
+.mini-card-front {
+  padding: 16px;
+}
+
+.mini-card-title h4 {
+  margin: 0;
+  font-family: "Russo One", sans-serif;
+  font-size: 1.4rem;
+}
+
+.mini-card-title span {
+  display: block;
+  margin-top: 6px;
+  font-family: "Kalam", cursive;
+  opacity: 0.9;
+}
+
+.mini-tags {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pill {
+  font-family: "Anta", sans-serif;
+  padding: 8px 12px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(128, 254, 254, 0.45);
+}
+
+.mini-hint {
+  margin-top: 12px;
+  font-family: "Anta", sans-serif;
+  opacity: 0.75;
+  font-size: 0.95rem;
+}
+
+/* Hover overlay */
+.mini-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(18, 0, 33, 0.9);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mini-card-inner:hover .mini-card-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mini-card-overlay p {
+  margin: 0;
+  font-family: "Kalam", cursive;
+  line-height: 1.65;
+  font-size: 1.05rem;
+}
+
+.mini-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.project-link {
+  font-family: "Anta", sans-serif;
+  padding: 10px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(128, 254, 254, 0.55);
+  transition: transform 0.2s ease, border 0.3s ease;
+}
+
+.project-link:hover {
+  transform: translateY(-2px);
+  border: 1px solid rgba(128, 254, 254, 1);
+}
+
+.club-divider {
+  margin: 32px 0 36px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+/* responsive */
+@media (max-width: 980px) {
+  .club-grid,
+  .club-grid.reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .club-grid.reverse .club-left,
+  .club-grid.reverse .club-right {
+    order: unset;
+  }
+}

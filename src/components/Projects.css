@@ -20,7 +20,7 @@
 
 .projects {
     height: 600px;
-    width: 30%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -55,4 +55,10 @@
     font-size: 4.5rem;
     color: white;
     margin-right: auto;
+}
+
+.card-wrapper {
+  display: flex;
+  width: 30%;
+  text-decoration: none;
 }

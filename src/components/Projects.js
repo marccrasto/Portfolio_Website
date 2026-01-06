@@ -10,10 +10,12 @@ class Projects extends React.Component {
 
     render() {
         return (
-            <div id="projects" className="projects">
-                <h1>Projects</h1>
-                
-            </div>
+            <Link to="/projects" reloadDocument className="card-wrapper">
+                <div id="projects" className="projects">
+                    <h1>Projects</h1>
+                    
+                </div>
+            </Link>
         );
     }
 }

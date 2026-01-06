@@ -10,6 +10,8 @@ import Academics from './components/Academic_work';
 import Footer from './components/Footer';
 import AboutPage from './pages/AboutPage';
 import AcademicPage from "./pages/AcademicPage";
+import ProjectsPage from "./pages/ProjectsPage";
+import ResumePage from "./pages/ResumePage"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -99,6 +101,8 @@ class App extends React.Component {
 
         <Route path="/academic" element={<AcademicPage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/projects" element={<ProjectsPage/>}/>
+        <Route path="/resume" element={<ResumePage />} />
       </Routes>
     );
   } 
