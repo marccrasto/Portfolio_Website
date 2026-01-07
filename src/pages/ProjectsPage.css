@@ -162,20 +162,24 @@
 /* Right image placeholder */
 .club-image {
   width: 100%;
-  border-radius: 12px;
+  height: 260px;              /* tweak if you want taller */
+  border-radius: 16px;
   overflow: hidden;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  background: rgba(0, 0, 0, 0.15);
-  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.25);
-  min-height: 260px;
+  display: flex;              /* helps with contain mode */
+  align-items: center;
+  justify-content: center;
+
+  /* IMPORTANT: remove any white background if it exists */
+  background: transparent;
 }
 
 .club-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   display: block;
 }
+
+
 
 .image-placeholder {
   height: 260px;
@@ -351,8 +355,8 @@
 
 .project-strip-right {
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  /*display: grid;
+  grid-template-columns: 1fr 1fr;*/
   gap: 16px;
   margin-top: 18px;
 }
@@ -377,10 +381,12 @@
   width: 100%;
   height: 84px; /* was 72px */
   font-size: 2rem;
+  font-family: 'Kalam';
 }
 
 .project-icon-btn:hover {
   transform: translateY(-2px);
   border-color: #80fefe;
   box-shadow: 0 0 16px rgba(128, 254, 254, 0.25);
+  cursor: pointer;
 }

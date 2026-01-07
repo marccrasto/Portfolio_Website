@@ -120,17 +120,17 @@ class ProjectsPage extends React.Component {
           description:
             "Hover card description placeholder.",
           tags: ["Python", "ML", "UI"],
-          github: "#",
+          github: "https://github.com/EthanPisani/WDS_LTC_BUS",
           demo: "#",
         },
       },
       {
         clubName: "Western AI",
         roleLine: "Front-end Developer · Sep 2023 – Apr 2024",
-        image: "/projects_pics/westernai.png",
+        image: "/projects_pics/westernuai.jpg",
         overviewTitle: "Overview",
         overview:
-          "Built and live-demoed a financial forecasting web app at CUCAI 2024 attended by 340+ delegates",
+          "Built and demoed a financial forecasting web app at CUCAI 2024",
         didTitle: "What did I do?",
         bullets: [
             "Built and live-demoed a financial forecasting web application at CUCAI 2024, presenting to 340+ delegates and showcasing real-time forecast generation",
@@ -143,7 +143,7 @@ class ProjectsPage extends React.Component {
           description:
             "Hover card description placeholder.",
           tags: ["Python", "Flask", "HTML + CSS"],
-          github: "#",
+          github: "https://github.com/marccrasto/WAI",
           demo: "#",
         },
       },
@@ -212,7 +212,7 @@ class ProjectsPage extends React.Component {
 
                   {/* Right: image placeholder */}
                   <div className="club-right">
-                    <div className="club-image">
+                    <div className='club-image'>
                       {c.image ? (
                         <img src={c.image} alt={`${c.clubName}`} />
                       ) : (
@@ -223,7 +223,7 @@ class ProjectsPage extends React.Component {
                     </div>
                     {/* Project strip (Option 2) */}
                     <div className="project-strip-right">
-                      <a
+                      {c.projectCard.github != '#' ? (<a
                         className="project-icon-btn wide"
                         href={c.projectCard.github}
                         target="_blank"
@@ -232,9 +232,16 @@ class ProjectsPage extends React.Component {
                         title="GitHub"
                       >
                         <FontAwesomeIcon icon={faGithub} />
-                      </a>
-
-                      <a
+                      </a>) : (<a
+                        className="project-icon-btn wide"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="GitHub repository"
+                        title="GitHub"
+                      >
+                        Coming Soon
+                      </a>)}
+                      {/*<a
                         className="project-icon-btn wide"
                         href={c.projectCard.demo}
                         target="_blank"
@@ -243,7 +250,7 @@ class ProjectsPage extends React.Component {
                         title="Demo"
                       >
                         <FontAwesomeIcon icon={faPlay} />
-                      </a>
+                      </a>*/}
                     </div>
                   </div>
                 </div>
