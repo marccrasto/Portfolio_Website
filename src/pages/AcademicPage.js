@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 import AOS from 'aos';
@@ -59,30 +60,60 @@ class ProjectsPage extends React.Component {
         description:
           "Gamifies textbooks by extracting content via OCR, structuring it into JSON, and generating gameplay + questions from the material.",
         image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80",
-        github: "#",
+        github: "https://github.com/lblommesteyn/wds-rpg",
         demo: "#",
         tags: ["OCR", "LLM", "Web"],
       },
       {
-        title: "Skin Cancer Classifier",
-        subtitle: "CNN + Computer Vision",
+        title: "Pac-Man",
+        subtitle: "A variation of the Pac-Man Game",
         description:
-          "End-to-end skin lesion classification with dataset curation across skin tones, preprocessing, and a deployable demo.",
-        image: "https://images.unsplash.com/photo-1530023367847-a683933f4172?auto=format&fit=crop&w=1200&q=80",
-        github: "#",
+          "A Java Pac-Man Game implemented using a Binary Search Tree",
+        image: "/projects_pics/pacman.jpg",
+        github: "https://github.com/marccrasto/Pac-Man",
         demo: "#",
         tags: ["Python", "CNN", "OpenCV"],
       },
       {
-        title: "NSFW VLM Filter",
-        subtitle: "Multimodal Safety",
+        title: "In a Row",
+        subtitle: "Every turn counts. Every line decides",
         description:
-          "Vision–language model that flags unsafe text prompts and images for 3D-print workflows, with a lightweight demo UI.",
-        image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1200&q=80",
-        github: "#",
+          "A game played by two players where they take turns placing tiles on a square board and only win when k tiles are in adjacent positions within the same row, column, or diagonal.",
+        image: "/projects_pics/inarow.jpg",
+        github: "https://github.com/marccrasto/InARow",
         demo: "#",
         tags: ["VLM", "Safety", "React"],
       },
+      {
+        title: "Taskly",
+        subtitle: "Kanban Board",
+        description:
+          "Taskly allows you to collaborate and track tasks with an intuitive and easy-to-use interface designed with HCI principles in mind that will streamline your workflow and take the mental strain away from your mind, so you can focus on being the best version of yourself!",
+        image: "/projects_pics/taskly.jpg",
+        github: "https://github.com/marccrasto/Taskly",
+        demo: "#",
+        tags: ["VLM", "Safety", "React"],
+      },
+      {
+        title: "Group Chat Messaging Service",
+        subtitle: "Kanban Board",
+        description:
+          "Distributed chat system that efficiently manages communication among multiple users using gRPC.",
+        image: "/projects_pics/chatsystem.jpg",
+        github: "https://github.com/marccrasto/Group_Chat_Messaging_Service",
+        demo: "#",
+        tags: ["VLM", "Safety", "React"],
+      },
+      {
+        title: "Traffic Accident Severity Detection",
+        subtitle: "From Data to Action: Predicting Traffic Accident Severity for Emergency Response",
+        description:
+          "This project leverages the Seattle Traffic Collision Dataset to predict traffic accident severity, minor, major, or fatal, using features like weather, road surface, and lighting conditions",
+        image: "/projects_pics/trafficseverity.png",
+        github: "https://github.com/marccrasto/Traffic_Accident_Severity",
+        demo: "#",
+        tags: ["VLM", "Safety", "React"],
+      }
     ];
 
     return (
@@ -138,20 +169,14 @@ class ProjectsPage extends React.Component {
 
                       <div className="overlay-actions">
                         <a
-                          className="project-link"
+                          className="project-icon-btn"
                           href={p.github}
                           target="_blank"
                           rel="noreferrer"
+                          aria-label="GitHub repository"
+                          title="GitHub"
                         >
-                          GitHub
-                        </a>
-                        <a
-                          className="project-link"
-                          href={p.demo}
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          Demo
+                          <FontAwesomeIcon icon={faGithub} />
                         </a>
                       </div>
                     </div>
