@@ -59,7 +59,7 @@ class ProjectsPage extends React.Component {
         subtitle: "OCR → JSON → Game Pipeline",
         description:
           "Gamifies textbooks by extracting content via OCR, structuring it into JSON, and generating gameplay + questions from the material.",
-        image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80",
+        image: "/projects_pics/textquest.jpg",
         github: "https://github.com/lblommesteyn/wds-rpg",
         demo: "#",
         tags: ["OCR", "LLM", "Web"],
@@ -137,7 +137,7 @@ class ProjectsPage extends React.Component {
           <div className="projects-page">
             <div className="projects-header">
               <h1>Academic Work</h1>
-              <p>Hover a card to see details + links.</p>
+              <p>Hover a card to see details + GitHub link.</p>
             </div>
 
             <div className="projects-grid">
@@ -183,6 +183,9 @@ class ProjectsPage extends React.Component {
                   </div>
                 </div>
               ))}
+            </div>
+            <div className="projects-header">
+              <p>To see more projects, visit my <a href="https://github.com/marccrasto">GitHub!</a></p>
             </div>
           </div>
 

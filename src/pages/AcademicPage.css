@@ -66,6 +66,15 @@
   gap: 22px;
 }
 
+.projects-header a {
+  text-decoration: none;
+  color: #80fefe; 
+}
+
+.projects-header a:hover {
+  text-decoration: underline; 
+}
+
 .project-card {
   position: relative;
   overflow: hidden;

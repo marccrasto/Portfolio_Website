@@ -76,23 +76,27 @@ class AboutPage extends React.Component {
           <div className={`about-page ${this.state.navbar ? "blur" : ""}`}>
             <div className="about-header">
               <h1>About Me</h1>
-              <p>Placeholder intro — add 1–2 sentences here.</p>
+              <p>Someone who enjoys turning ideas into software, bridging logic and creativity to build systems that feel as good to use as they are to engineer.</p>
             </div>
 
             <div className="about-main">
               <div className="about-photo">
-                <div className="photo-placeholder">Your Photo</div>
+                <div className="photo-placeholder">
+                  <img
+                    src="/profile_pic/profile_pic.jpg"
+                    alt="Marc Crasto"
+                    className="photo-placeholder"
+                  />
+                </div>
               </div>
 
               <div className="about-text">
                 <h2>Who I Am</h2>
                 <p>
-                  Placeholder paragraph about who you are, what you’re studying,
-                  and what you enjoy building.
+                  Hi, my name is Marc Crasto. I’m a Computer Science undergraduate at Western University with a strong interest in building thoughtful, real-world software. I enjoy working at the intersection of problem-solving and design—turning complex ideas into intuitive, functional systems. Through coursework, research, and team projects, I’ve developed a solid foundation in software engineering while continuously pushing myself to learn new technologies and approaches.
                 </p>
                 <p>
-                  Placeholder paragraph about your interests (AI, UI, full-stack),
-                  and what you’re looking for.
+                  My interests span artificial intelligence, full-stack development, and user-focused interface design. I’m especially drawn to projects where intelligent systems meet clean, usable interfaces—whether that’s machine learning models, data-driven applications, or end-to-end web platforms. I’m currently looking for opportunities to collaborate on impactful projects, deepen my technical skills, and contribute to products that are both technically sound and genuinely useful.
                 </p>
               </div>
             </div>
@@ -100,11 +104,11 @@ class AboutPage extends React.Component {
             <div className="about-section" data-aos="fade-left">
               <h2>Programming Languages</h2>
               <div className="pill-row">
-                <span className="pill">JavaScript</span>
-                <span className="pill">Python</span>
                 <span className="pill">Java</span>
-                <span className="pill">C</span>
+                <span className="pill">Python</span>
+                <span className="pill">Javascript</span>
                 <span className="pill">SQL</span>
+                <span className="pill">C</span>
               </div>
             </div>
 
@@ -113,9 +117,10 @@ class AboutPage extends React.Component {
               <div className="pill-row">
                 <span className="pill">React</span>
                 <span className="pill">Node.js</span>
+                <span className="pill">Express</span>
+                <span className="pill">Flask</span>
                 <span className="pill">Git</span>
                 <span className="pill">Docker</span>
-                <span className="pill">PostgreSQL</span>
               </div>
             </div>
           </div>
