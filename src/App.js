@@ -4,6 +4,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import AboutMe from './components/About_me';
 import Projects from './components/Projects';
 import Academics from './components/Academic_work';
@@ -69,8 +70,8 @@ class App extends React.Component {
             <div className='welcome-container'>
               <div className="topbar">
                 <div className='topbar left'>
-                  <button onClick={this.toggleNavbar}>
-                    <FontAwesomeIcon className='menu-icon' icon={faBars}/>
+                  <button onClick={this.toggleNavbar} className='topbar-btn'>
+                    <FontAwesomeIcon key={this.state.navbar ? 'x' : 'bars'} className={`menu-icon`} icon={this.state.navbar ? faXmark : faBars}/>
                   </button>
                   <div className="site-name">Marc Crasto</div>
                 </div>
@@ -78,9 +79,9 @@ class App extends React.Component {
               </div>
               <div className={`${this.state.navbar ? "blur" : ""}`}>
                 <div className="hero-section">
-                  <h1 data-aos="fade-left" data-aos-delay="150">Hi, I'm Marc Crasto 👋</h1>
-                  <p data-aos="fade-right" data-aos-delay="300">Aspiring Full-Stack Developer | Passionate about AI & UI</p>
-                  <a className="cta-button" data-aos="fade-in" data-aos-delay="450" onClick={this.meetMe}>Meet me ↓</a>
+                  <h1>Hi, I'm Marc Crasto 👋</h1>
+                  <p>Aspiring Full-Stack Developer | Passionate about AI & UI</p>
+                  <a className="cta-button" onClick={this.meetMe}>Meet me ↓</a>
                 </div>
                 <div className={`app`}>
                   <AboutMe />
@@ -94,7 +95,7 @@ class App extends React.Component {
                   </button>
                 )}
               </div>
-              <Navbar visibility={this.state.navbar} onClick={this.toggleNavbar}/>
+              <Navbar visibility={this.state.navbar}/>
             </div>
           }
         />

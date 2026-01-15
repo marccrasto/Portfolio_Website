@@ -12,7 +12,7 @@ class Projects extends React.Component {
         return (
             <Link to="/projects" reloadDocument className="card-wrapper">
                 <div id="projects" className="projects">
-                    <h1>Projects</h1>
+                    <h1>Club Projects</h1>
                     
                 </div>
             </Link>

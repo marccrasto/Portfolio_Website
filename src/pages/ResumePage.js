@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 class ResumePage extends React.Component {
   constructor(props) {
@@ -52,8 +53,8 @@ class ResumePage extends React.Component {
       <div className="welcome-container">
         <div className="topbar">
           <div className="topbar left">
-            <button onClick={this.toggleNavbar}>
-              <FontAwesomeIcon className="menu-icon" icon={faBars} />
+            <button onClick={this.toggleNavbar} className='topbar-btn'>
+              <FontAwesomeIcon key={this.state.navbar ? 'x' : 'bars'} className={`menu-icon`} icon={this.state.navbar ? faXmark : faBars}/>
             </button>
             <div className="site-name">Marc Crasto</div>
           </div>
