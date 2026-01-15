@@ -1,12 +1,12 @@
 import React from "react";
 import "../App.css";
 import "./AcademicPage.css";
+import { Link } from 'react-router-dom';
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
@@ -137,13 +137,13 @@ class ProjectsPage extends React.Component {
         <div className={`${this.state.navbar ? "blur" : ""}`}>
           <div className="projects-page">
             <div className="projects-header">
-              <h1>Academic Work</h1>
+              <h1>Academic Projects</h1>
               <p>Hover a card to see details + GitHub link.</p>
             </div>
 
             <div className="projects-grid">
               {projects.map((p) => (
-                <div className="project-card" data-aos="fade-up" key={p.title}>
+                <div className="project-card" onClick={() => window.open(p.github, "_blank")} data-aos="fade-up" key={p.title}>
                   <div
                     className="project-image"
                     style={{ backgroundImage: `url(${p.image})` }}
@@ -166,19 +166,6 @@ class ProjectsPage extends React.Component {
                             {t}
                           </span>
                         ))}
-                      </div>
-
-                      <div className="overlay-actions">
-                        <a
-                          className="project-icon-btn"
-                          href={p.github}
-                          target="_blank"
-                          rel="noreferrer"
-                          aria-label="GitHub repository"
-                          title="GitHub"
-                        >
-                          <FontAwesomeIcon icon={faGithub} />
-                        </a>
                       </div>
                     </div>
                   </div>

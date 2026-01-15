@@ -93,7 +93,7 @@ class ProjectsPage extends React.Component {
         ],
         projectCard: {
           title: "Skin Cancer Detection App",
-          subtitle: "CNN + Full-stack",
+          subtitle: "CNN + Computer Vision",
           description:
             "Hover card description placeholder.",
           tags: ["CNN", "Computer Vision", "React"],
@@ -116,7 +116,7 @@ class ProjectsPage extends React.Component {
         ],
         projectCard: {
           title: "Bus Arrival Predictor",
-          subtitle: "Model + UI",
+          subtitle: "LSTM + UI",
           description:
             "Hover card description placeholder.",
           tags: ["Python", "ML", "UI"],
@@ -139,7 +139,7 @@ class ProjectsPage extends React.Component {
         ],
         projectCard: {
           title: "Financial Performance Predictor",
-          subtitle: "Python Flask + UI",
+          subtitle: "Full-Stack",
           description:
             "Hover card description placeholder.",
           tags: ["Python", "Flask", "HTML + CSS"],
@@ -169,7 +169,7 @@ class ProjectsPage extends React.Component {
         <div className={`${this.state.navbar ? "blur" : ""}`}>
           <div className="work-page">
             <div className="work-header">
-              <h1>Work Experience</h1>
+              <h1>Club Projects</h1>
               <p>Clubs, projects, and what I built in each.</p>
             </div>
 
@@ -223,7 +223,7 @@ class ProjectsPage extends React.Component {
                     </div>
                     {/* Project strip (Option 2) */}
                     <div className="project-strip-right">
-                      {c.projectCard.github != '#' ? (<a
+                      {c.projectCard.github !== '#' ? (<a
                         className="project-icon-btn wide"
                         href={c.projectCard.github}
                         target="_blank"
@@ -233,11 +233,11 @@ class ProjectsPage extends React.Component {
                       >
                         <FontAwesomeIcon icon={faGithub} />
                       </a>) : (<a
-                        className="project-icon-btn wide"
+                        className="project-icon-btn-no-cursor wide"
                         target="_blank"
                         rel="noreferrer"
                         aria-label="GitHub repository"
-                        title="GitHub"
+                        title="Coming Soon"
                       >
                         Coming Soon
                       </a>)}

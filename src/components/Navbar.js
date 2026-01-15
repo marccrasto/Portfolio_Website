@@ -16,7 +16,7 @@ class Navbar extends React.Component {
                     <Link to="/" reloadDocument><a><li>Home</li></a></Link>
                     <Link to="/about" reloadDocument><a><li>About Me</li></a></Link>
                     <Link to="/projects" reloadDocument><a><li>Club Projects</li></a></Link>
-                    <Link to="/academic" reloadDocument><a><li>Academic Work</li></a></Link>
+                    <Link to="/academic" reloadDocument><a><li>Academic Projects</li></a></Link>
                     <Link to="/resume" reloadDocument><a><li>Resume</li></a></Link>
                 </ul>
             </div>

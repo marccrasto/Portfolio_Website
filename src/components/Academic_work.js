@@ -13,7 +13,7 @@ class Academics extends React.Component {
         return (
             <Link to="/academic" reloadDocument className="card-wrapper">
                 <div className="academics">
-                    <h1>Academic Work</h1>
+                    <h1>Academic Projects</h1>
                     <video loop autoPlay muted playsInline>
                         <source src={animation} type="video/webm" />
                     </video>  
