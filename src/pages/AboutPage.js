@@ -94,7 +94,7 @@ class AboutPage extends React.Component {
               <div className="about-text">
                 <h2>Who I Am</h2>
                 <p>
-                  Hi, my name is Marc Crasto. I’m a Computer Science undergraduate at Western University with a strong interest in building thoughtful, real-world software. I enjoy working at the intersection of problem-solving and design—turning complex ideas into intuitive, functional systems. Through coursework, research, and team projects, I’ve developed a solid foundation in software engineering while continuously pushing myself to learn new technologies and approaches.
+                  Hi, my name is Marc Crasto. I’m a Computer Science undergraduate at Western University with a strong interest in building thoughtful, real-world software. I enjoy working at the intersection of problem-solving and design—turning complex ideas into intuitive, functional systems. Through coursework, research, and team projects, I’ve developed a solid foundation in software development and machine learning while continuously pushing myself to learn new technologies and approaches.
                 </p>
                 <p>
                   My interests span artificial intelligence, full-stack development, and user-focused interface design. I’m especially drawn to projects where intelligent systems meet clean, usable interfaces—whether that’s machine learning models, data-driven applications, or end-to-end web platforms. I’m currently looking for opportunities to collaborate on impactful projects, deepen my technical skills, and contribute to products that are both technically sound and genuinely useful.
