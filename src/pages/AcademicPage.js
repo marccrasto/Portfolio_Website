@@ -1,7 +1,6 @@
 import React from "react";
 import "../App.css";
 import "./AcademicPage.css";
-import { Link } from 'react-router-dom';
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -57,64 +56,64 @@ class ProjectsPage extends React.Component {
     const projects = [
       {
         title: "TextQuest",
-        subtitle: "OCR → JSON → Game Pipeline",
+        subtitle: "AI-Assisted Learning Prototype",
         description:
-          "Gamifies textbooks by extracting content via OCR, structuring it into JSON, and generating gameplay + questions from the material.",
+          "A proof-of-concept AI-driven learning platform that gamifies textbooks by extracting content with OCR and generating progression logic and assessment questions using an LLM. The system demonstrates a Subway Surfers–style gameplay flow where players answer textbook-based questions through lane-based interactions.",
         image: "/projects_pics/textquest.jpg",
         github: "https://github.com/lblommesteyn/wds-rpg",
         demo: "#",
-        tags: ["OCR", "LLM", "Web"],
+        tags: ["OCR", "LLM", "Game Design", "AI"],
       },
       {
         title: "Pac-Man",
-        subtitle: "A variation of the Pac-Man Game",
+        subtitle: "Data-Structure–Driven Game Logic",
         description:
-          "A Java Pac-Man Game implemented using a Binary Search Tree",
+          "A Java-based implementation of the classic Pac-Man game completed as a course assignment to demonstrate data structures in practice. The project uses a Binary Search Tree to manage game state and in-game entities, illustrating how fundamental structures like BSTs can be applied within game systems.",
         image: "/projects_pics/pacman.jpg",
         github: "https://github.com/marccrasto/Pac-Man",
         demo: "#",
-        tags: ["Python", "CNN", "OpenCV"],
+        tags: ["Java", "Data Structures"],
       },
       {
         title: "In a Row",
-        subtitle: "Every turn counts. Every line decides",
+        subtitle: "Configurable Grid Game with State Evaluation",
         description:
-          "A game played by two players where they take turns placing tiles on a square board and only win when k tiles are in adjacent positions within the same row, column, or diagonal.",
+          "A two-player strategy game, featuring variable board sizes, blocked cells, and turn-based tile placement on a square grid. The game supports configurable win conditions, draw detection, and state evaluation through string encodings and a hash table that stores the value of each tile on the grid",
         image: "/projects_pics/inarow.jpg",
         github: "https://github.com/marccrasto/InARow",
         demo: "#",
-        tags: ["VLM", "Safety", "React"],
+        tags: ["Algorithms", "Game Logic", "JavaScript"],
       },
       {
         title: "Taskly",
-        subtitle: "Kanban Board",
+        subtitle: "Reducing Cognitive Load in Task Tracking",
         description:
-          "Taskly allows you to collaborate and track tasks with an intuitive and easy-to-use interface designed with HCI principles in mind that will streamline your workflow and take the mental strain away from your mind, so you can focus on being the best version of yourself!",
+          "A collaborative task management application inspired by Kanban workflows and grounded in core Human–Computer Interaction principles for usability-focused design decisions and workflow clarity. The system supports task creation, prioritization, and progress tracking through an interface to reduce cognitive load.",
         image: "/projects_pics/taskly.jpg",
         github: "https://github.com/marccrasto/Taskly",
         demo: "#",
-        tags: ["VLM", "Safety", "React"],
+        tags: ["HCI", "Full Stack", "JavaScript", "UI/UX"],
       },
       {
         title: "Group Chat Messaging Service",
-        subtitle: "Kanban Board",
+        subtitle: "Distributed Systems with gRPC",
         description:
-          "Distributed chat system that efficiently manages communication among multiple users using gRPC.",
+          "A distributed group chat system built using gRPC to enable real-time communication across multiple users within a networked client–server architecture and message-driven design. The project focuses on concurrency, synchronization, and reliable delivery while demonstrating core distributed systems principles clearly.",
         image: "/projects_pics/chatsystem.jpg",
         github: "https://github.com/marccrasto/Group_Chat_Messaging_Service",
         demo: "#",
-        tags: ["VLM", "Safety", "React"],
+        tags: ["Distributed Systems", "gRPC", "Networking"],
       },
       {
         title: "Traffic Accident Severity Detection",
-        subtitle: "From Data to Action: Predicting Traffic Accident Severity for Emergency Response",
+        subtitle: "Predicting Crash Severity with ML",
         description:
-          "This project leverages the Seattle Traffic Collision Dataset to predict traffic accident severity, minor, major, or fatal, using features like weather, road surface, and lighting conditions",
+          "A machine learning project that predicts traffic accident severity levels using collision data and supervised classification techniques for decision-support analysis tasks at scale. The model incorporates environmental context such as weather, road conditions, lighting, and time to inform decisions.",
         image: "/projects_pics/trafficseverity.png",
         github: "https://github.com/marccrasto/Traffic_Accident_Severity",
         demo: "#",
-        tags: ["VLM", "Safety", "React"],
-      }
+        tags: ["Machine Learning", "Classification"],
+      },
     ];
 
     return (
@@ -138,7 +137,7 @@ class ProjectsPage extends React.Component {
           <div className="projects-page">
             <div className="projects-header">
               <h1>Academic Projects</h1>
-              <p>Hover a card to see details + GitHub link.</p>
+              <p>Hover for details • Click to view on GitHub</p>
             </div>
 
             <div className="projects-grid">
