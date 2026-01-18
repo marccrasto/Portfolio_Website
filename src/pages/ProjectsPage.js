@@ -64,12 +64,12 @@ class ProjectsPage extends React.Component {
           "Developing a vision–language model (VLM) for NSFW detection in 3D printing workflows",
         didTitle: "What did I do?",
         bullets: [
-          "Worked in a team of 7 to create an NSFW detection system for 3D printing workflows, enabling screening of both textual prompts and image inputs before print execution",
-          "Researched and evaluated 10+ state-of-the-art vision–language model architectures; implemented a pretrained VLM using Python and deep learning libraries",
-          "Collaborated with the Western 3D Printing Club to validate real-world use cases and presented the system and experimental results at CUCAI 2026",
+          "Designing an NSFW screening system for 3D printing pipelines, enabling automatic filtering of both textual prompts and image inputs prior to print execution",
+          "Surveyed and compared vision–language model architectures to inform VLM integration using Python-based deep learning frameworks",
+          "Partnering with the Western 3D Printing Club to validate real-world constraints and presenting the system’s design and results at CUCAI 2026",
         ],
         projectCard: {
-          title: "NSFW Detection",
+          title: "3D Printing NSFW Detection",
           subtitle: "VLM + CNN",
           description:
             "Hover card description placeholder: what you built, why it matters, and what makes it unique.",
@@ -87,9 +87,9 @@ class ProjectsPage extends React.Component {
           "Building a full-stack skin cancer detection application",
         didTitle: "What did I do?",
         bullets: [
-            "Developed a full-stack skin cancer detection application enabling end-to-end lesion classification, including real-time image capture and inference via a smartphone camera",
-            "Designed and trained a custom CNN in Python using PyTorch, informed by findings from 15 academic papers; preprocessed a 10,000-image dataset spanning 7 skin tones",
-            "Collaborated with a team of 7 developers and presented the completed system and experimental results at CUCAI 2026"
+            "Building an end-to-end skin cancer detection platform supporting real-time lesion capture and classification via a smartphone camera interface",
+            "Implementing a custom CNN in PyTorch, informed by a review of 15 dermatology-focused research papers and a curated 10,000-image dataset spanning seven skin tones",
+            "Contributing within a seven-person development team and presenting experimental findings and system performance at CUCAI 2026",
         ],
         projectCard: {
           title: "Skin Cancer Detection App",
@@ -110,9 +110,9 @@ class ProjectsPage extends React.Component {
           "Worked in a Scrum team of 7 to develop a real-time transit app for London, Ontario",
         didTitle: "What did I do?",
         bullets: [
-            "Developed a real-time transit prediction application for London, Ontario, improving arrival time accuracy and reducing mean absolute error by 17% compared to Google Maps",
-            "Evaluated baseline models (linear regression, random forest) and researched four predictive architectures before implementing a bidirectional LSTM using PyTorch",
-            "Worked in a Scrum team of 7 and collaborated with Computer Science faculty to validate modeling choices and system design"
+            "Implemented a real-time bus arrival prediction system for London, Ontario, achieving a 17% reduction in mean absolute error compared to Google Maps",
+            "Benchmarked multiple predictive approaches before converging on a bidirectional LSTM architecture implemented in PyTorch",
+            "Collaborated in an agile Scrum environment alongside Computer Science faculty to refine model design and system architecture",
         ],
         projectCard: {
           title: "Bus Arrival Predictor",
@@ -130,12 +130,12 @@ class ProjectsPage extends React.Component {
         image: "/projects_pics/westernuai.jpg",
         overviewTitle: "Overview",
         overview:
-          "Built and demoed a financial forecasting web app at CUCAI 2024",
+          "Designed the UI for a financial forecasting web app",
         didTitle: "What did I do?",
         bullets: [
-            "Built and live-demoed a financial forecasting web application at CUCAI 2024, presenting to 340+ delegates and showcasing real-time forecast generation",
-            "Implemented the UI and routing layers using Flask, HTML, and CSS, handling request routing, form submission, and dynamic rendering of forecast outputs",
-            "Worked in a two-person team to design, build, and deliver a production-ready demo under conference conditions"
+            "Delivered and live-demoed a financial forecasting web application at CUCAI 2024 to an audience of 340+ delegates",
+            "Built the presentation and interaction layers using Flask, HTML, and CSS, supporting form submission, routing, and dynamic forecast rendering",
+            "Coordinated within a two-person team to produce a stable, conference-ready demo under tight timelines",
         ],
         projectCard: {
           title: "Financial Performance Predictor",
@@ -170,7 +170,7 @@ class ProjectsPage extends React.Component {
           <div className="work-page">
             <div className="work-header">
               <h1>Club Projects</h1>
-              <p>Clubs, projects, and what I built in each.</p>
+              <p>Clubs, projects, and my contributions.</p>
             </div>
 
             {clubs.map((c, idx) => (
