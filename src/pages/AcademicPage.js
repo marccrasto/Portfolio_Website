@@ -60,7 +60,7 @@ class ProjectsPage extends React.Component {
         description:
           "A proof-of-concept AI-driven learning platform that gamifies textbooks by extracting content with OCR and generating progression logic and assessment questions using an LLM. The system demonstrates a Subway Surfers–style gameplay flow where players answer textbook-based questions through lane-based interactions.",
         image: "/projects_pics/textquest.jpg",
-        github: "https://github.com/lblommesteyn/wds-rpg",
+        github: "https://github.com/lblommesteyn/wds-rpg/tree/marc-crasto",
         demo: "#",
         tags: ["OCR", "LLM", "Game Design", "AI"],
       },
