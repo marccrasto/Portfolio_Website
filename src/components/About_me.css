@@ -57,7 +57,7 @@ h1 {
 
 video {
     transition: transform 0.4s;
-    margin-left: 5rem;
+    margin-left: 2.5rem;
     width: 500;
     height: 500px;
 
@@ -74,3 +74,38 @@ video {
   text-decoration: none;
 }
 
+@media (max-width: 768px)  {
+    .card-wrapper {
+        display: block;
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 0 0 100%;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .about-me {
+        height: 500px;
+        background-size: 350%;
+    }
+
+    .about-me h1 {
+        font-size: 3.7rem;
+    }
+
+    video {
+        height: 300px;
+        margin-left: 1.2rem;
+        margin-top: 7rem;
+    }
+
+    .about-me:hover video{
+        transform: none;
+    }
+
+    .about-me:hover {
+        background-size: 350%;
+        border: 4px solid #80fefe;
+    }
+}

@@ -205,3 +205,44 @@
 .scroll-to-top:hover {
     background-color: #66fcf1;
 }
+
+@media (max-width: 769px) {
+    .app {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    
+}
+
+@media (max-width: 480px) {
+    .site-name {
+        font-size: 1.3rem;
+        white-space: nowrap;
+    }
+
+    .contact {
+        font-size: 1.3rem;
+    }
+
+    .topbar-left {
+        gap: 10px;
+        min-width: 0;
+    }
+
+    .menu-icon {
+        font-size: 2rem;
+    }
+
+    .topbar {
+        padding: 10px 0px;
+    }
+
+    .topbar-btn {
+        width: 3rem;
+        margin: 3px;
+        background: none;
+        border: none;
+    }
+}
