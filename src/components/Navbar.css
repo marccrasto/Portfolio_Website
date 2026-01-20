@@ -76,3 +76,9 @@ button {
     color: #80fefe; /* or try #66fcf1 or #a0fefe */
     transition: color 0.5s;
 }
+
+@media (max-width: 480px) {
+    .navbar li {
+        width: 300px;
+    }
+}
