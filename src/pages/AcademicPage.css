@@ -214,6 +214,14 @@
   border: 1px solid rgba(128, 254, 254, 1);
 }
 
+.project-card:hover .project-footer {
+  filter: blur(3px);
+}
+
+  .project-card:hover .project-image {
+  filter: blur(3px);
+}
+
 /* responsive */
 @media (max-width: 1100px) {
   .projects-grid {
@@ -224,5 +232,26 @@
 @media (max-width: 720px) {
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-image {
+    height: 62%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .overlay-content p {
+    font-size: 16px;
+  }
+
+  .pill {
+    font-size: 14px;
+  }
+
+  .overlay-content h3 {
+    font-size: 25px;
   }
 }

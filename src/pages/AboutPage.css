@@ -142,3 +142,10 @@
   transform: translateY(-2px);
   border: 1px solid rgba(128, 254, 254, 0.9);
 }
+
+@media (max-width: 480px) {
+  .photo-placeholder {
+    width: 350px;
+    height: 350px;
+  }
+}

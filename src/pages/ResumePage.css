@@ -92,3 +92,9 @@
   border: 1px solid rgba(255, 255, 255, 0.16);
   background: white;
 }
+
+@media (max-width:480px) {
+  .resume-iframe {
+    height: 840px;
+  }
+}
