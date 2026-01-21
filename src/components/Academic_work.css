@@ -88,3 +88,22 @@ h1 {
         border: 4px solid #80fefe;
     }
 }
+
+/*Phones Landscape view*/
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .academics {
+        height: 500px;
+        background-size: 60%; 
+        background-position: 140px 90px;
+    }
+
+    .academics h1 {
+        font-size: 3.7rem;
+    }
+
+    .academics:hover {
+        background-size:65%;
+        background-position: 125px 90px;
+        border: 4px solid #80fefe;
+    }
+}

@@ -258,3 +258,41 @@ html, body {
         justify-content: center;
     }
 }
+
+/*Phones Landscape view*/
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .site-name {
+        font-size: 1.3rem;
+        white-space: nowrap;
+    }
+
+    .contact {
+        font-size: 1.3rem;
+    }
+
+    .topbar-left {
+        gap: 10px;
+        min-width: 0;
+    }
+
+    .menu-icon {
+        font-size: 2rem;
+    }
+
+    .topbar {
+        padding: 10px 0px;
+        position: -webkit-sticky;
+    }
+
+    .topbar-btn {
+        width: 3rem;
+        margin: 3px;
+        background: none;
+        border: none;
+    }
+    
+    .scroll-to-top {
+        display: flex;
+        justify-content: center;
+    }
+}

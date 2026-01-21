@@ -98,3 +98,10 @@
     height: 840px;
   }
 }
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .resume-iframe {
+    height: 840px;
+    width: 600px
+  }
+}

@@ -255,3 +255,24 @@
     font-size: 25px;
   }
 }
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .project-image {
+    height: 62%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .overlay-content p {
+    font-size: 16px;
+  }
+
+  .pill {
+    font-size: 14px;
+  }
+
+  .overlay-content h3 {
+    font-size: 23px;
+  }
+}

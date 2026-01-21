@@ -95,3 +95,22 @@ h1 {
         border: 4px solid #80fefe;
     }
 }
+
+/*Tablets*/
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .about-me {
+        height: 500px;
+        background-size: 55%; 
+        background-position: 154px 40px;
+    }
+
+    .about-me h1 {
+        font-size: 3.7rem;
+    }
+
+    .about-me:hover {
+        background-size: 60%;
+        background-position: 136px 40px;
+        border: 4px solid #80fefe;
+    }
+}
