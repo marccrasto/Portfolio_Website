@@ -9,7 +9,7 @@ class Academics extends React.Component {
 
     render() {
         return (
-            <a href="#/academic" className="card-wrapper">
+            <a href="#/academic" reloadDocument className="card-wrapper">
                 <div className="academics">
                     <h1>Academic Projects</h1> 
                 </div>
