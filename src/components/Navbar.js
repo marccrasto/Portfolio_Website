@@ -13,11 +13,11 @@ class Navbar extends React.Component {
         return (
             <div id="navbar" className={`navbar ${this.props.visibility ? 'visible' : ''}`}>
                 <ul>
-                    <Link to="/" reloadDocument><a><li>Home</li></a></Link>
-                    <Link to="/about" reloadDocument><a><li>About Me</li></a></Link>
-                    <Link to="/projects" reloadDocument><a><li>Club Projects</li></a></Link>
-                    <Link to="/academic" reloadDocument><a><li>Academic Projects</li></a></Link>
-                    <Link to="/resume" reloadDocument><a><li>Resume</li></a></Link>
+                    <Link to="/" reloadDocument onClick={this.props.onClick}><a><li>Home</li></a></Link>
+                    <Link to="/about" reloadDocument onClick={this.props.onClick}><a><li>About Me</li></a></Link>
+                    <Link to="/projects" reloadDocument onClick={this.props.onClick}><a><li>Club Projects</li></a></Link>
+                    <Link to="/academic" reloadDocument onClick={this.props.onClick}><a><li>Academic Projects</li></a></Link>
+                    <Link to="/resume" reloadDocument onClick={this.props.onClick}><a><li>Resume</li></a></Link>
                 </ul>
             </div>
         );
