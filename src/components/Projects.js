@@ -9,7 +9,7 @@ class Projects extends React.Component {
 
     render() {
         return (
-            <a to="#/projects" reloadDocument className="card-wrapper">
+            <a to="#/projects" onClick={() => window.location.reload()} className="card-wrapper">
                 <div id="projects" className="projects">
                     <h1>Club Projects</h1>
                 </div>
