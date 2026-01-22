@@ -84,7 +84,7 @@ class AboutPage extends React.Component {
               <div className="about-photo">
                 <div className="photo-placeholder">
                   <img
-                    src="/profile_pic/profile_pic.jpg"
+                    src={process.env.PUBLIC_URL + "/profile_pic/profile_pic.jpg"}
                     alt="Marc Crasto"
                     className="photo-placeholder"
                   />
