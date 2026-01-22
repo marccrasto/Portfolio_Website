@@ -67,7 +67,17 @@ class AboutPage extends React.Component {
             <div className="site-name">Marc Crasto</div>
           </div>
           <p>
-            <a accessKey="c" href="#footer" onClick={this.state.navbar ? this.toggleNavbar : () => {}} className="contact">
+            <a
+              href="#"
+              className="contact"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById("footer")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+                if (this.state.navbar) this.toggleNavbar();
+              }}
+            >
               Contact
             </a>
           </p>

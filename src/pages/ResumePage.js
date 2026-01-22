@@ -46,7 +46,7 @@ class ResumePage extends React.Component {
 
   render() {
     
-    const resumePdf = "/resume/resume.pdf";
+    const resumePdf = process.env.PUBLIC_URL + "/resume/resume.pdf";
     const resumePreviewImage = "/resume/resume-preview.png";
 
     return (
@@ -59,7 +59,17 @@ class ResumePage extends React.Component {
             <div className="site-name">Marc Crasto</div>
           </div>
           <p>
-            <a accessKey="c" href="#footer" className="contact">
+            <a
+              href="#"
+              className="contact"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById("footer")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+                if (this.state.navbar) this.toggleNavbar();
+              }}
+            >
               Contact
             </a>
           </p>

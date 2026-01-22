@@ -75,7 +75,21 @@ class App extends React.Component {
                   </button>
                   <div className="site-name">Marc Crasto</div>
                 </div>
-                <p><a accessKey="c" href="#footer" onClick={this.state.navbar ? this.toggleNavbar : () => {}} className='contact'>Contact</a></p>
+                <p>
+                  <a
+                    href="#"
+                    className="contact"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document.getElementById("footer")?.scrollIntoView({
+                        behavior: "smooth",
+                      });
+                      if (this.state.navbar) this.toggleNavbar();
+                    }}
+                  >
+                    Contact
+                  </a>
+                </p>
               </div>
               <div className={`${this.state.navbar ? "blur" : ""}`}>
                 <div className="hero-section">
