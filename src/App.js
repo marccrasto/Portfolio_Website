@@ -95,7 +95,7 @@ class App extends React.Component {
                   </button>
                 )}
               </div>
-              <Navbar visibility={this.state.navbar}/>
+              <Navbar visibility={this.state.navbar} onClick={this.toggleNavbar}/>
             </div>
           }
         />
