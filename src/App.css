@@ -98,10 +98,19 @@ html, body {
 
 .app {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 40px;
+    justify-content: center;     
+    gap: 40px; 
     padding: 20px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.card-wrapper {
+  display: block;              
+  text-decoration: none;
+  flex: 1 1 420px;            
+  width: 100%;
 }
 
 .welcome-container {
@@ -153,14 +162,19 @@ html, body {
     display: flex;
     align-items: center;
     background-color: rgba(26, 0, 51, 0.95);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
     padding: 10px 20px;
     z-index: 1000;
     justify-content: space-between;
 }
 
-.topbar .left {
+.topbar-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
     padding: 0;
-    background-color: transparent;
 }
 
 .contact {
@@ -178,7 +192,7 @@ html, body {
 
 .site-name {
     color: white;
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-left: 0px;
     font-family: 'Russo One';
 }
@@ -212,24 +226,15 @@ html, body {
         background-color: #66fcf1;
     }
 
-@media (max-width: 769px) {
-    .app {
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    
-}
 
 @media (max-width: 480px) {
     .site-name {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         white-space: nowrap;
     }
 
     .contact {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .topbar-left {
@@ -259,15 +264,15 @@ html, body {
     }
 }
 
-/*Phones Landscape view*/
+
 @media screen and (min-width: 480px) and (max-width: 768px) {
     .site-name {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         white-space: nowrap;
     }
 
     .contact {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .topbar-left {

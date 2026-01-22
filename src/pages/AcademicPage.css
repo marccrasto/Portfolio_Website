@@ -152,6 +152,7 @@
 
 .overlay-content {
   width: 100%;
+  max-height: 100%;
   max-width: 520px;
   font-family: "Kalam", cursive;
 }
@@ -160,12 +161,13 @@
   margin: 0 0 10px;
   font-family: "Russo One", sans-serif;
   color: #80fefe;
-  font-size: 2rem;
+  font-size: clamp(1.3rem, 2.2vw, 2rem);
 }
 
 .overlay-content p {
   line-height: 1.6;
-  font-size: 1.1rem;
+  font-size: clamp(0.95rem, 1.4vw, 1.1rem);
+  line-height: 1.5;
   opacity: 0.95;
 }
 
@@ -182,6 +184,7 @@
   border-radius: 25px;
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(128, 254, 254, 0.45);
+  font-size: clamp(0.75rem, 1vw, 0.9rem);
 }
 
 .pill:hover {
@@ -222,7 +225,6 @@
   filter: blur(3px);
 }
 
-/* responsive */
 @media (max-width: 1100px) {
   .projects-grid {
     grid-template-columns: repeat(2, minmax(240px, 1fr));

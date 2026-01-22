@@ -24,7 +24,6 @@
 }
 
 .visible {
-    /*z-index: 1;*/
     opacity: 0.9;
     visibility: visible;
     transition: opacity 0.5s ease-in-out, visibility 0s;
@@ -55,7 +54,7 @@
 }
 
 .navbar li:hover {
-    color: #80fefe; /* or try #66fcf1 or #a0fefe */
+    color: #80fefe;
     transition: color 0.5s;
 }
 
@@ -73,7 +72,7 @@ button {
 }
 
 .close-icon:hover {
-    color: #80fefe; /* or try #66fcf1 or #a0fefe */
+    color: #80fefe;
     transition: color 0.5s;
 }
 

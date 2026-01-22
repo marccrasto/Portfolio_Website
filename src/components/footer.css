@@ -67,7 +67,6 @@ button:hover {
     background-color: #66fcf1;
 }
 
-/* Re-aligned right column */
 .footer-right {
     display: flex;
     flex-direction: column;
@@ -76,7 +75,6 @@ button:hover {
     text-align: right;
 }
 
-/* Right-side contact info */
 .contact-info h3 {
     font-size: 1.7rem;
     font-family: 'Russo One';
@@ -100,7 +98,6 @@ button:hover {
     text-decoration: underline;
 }
 
-/* Social icons */
 .footer-icons {
     display: flex;
     gap: 20px;
@@ -109,7 +106,7 @@ button:hover {
 }
 
 .footer-icons a {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: white;
     transition: color 0.3s;
 }
@@ -118,7 +115,6 @@ button:hover {
     color: #80fefe;
 }
 
-/* New bottom-right filler */
 .footer-note {
     color: rgba(255, 255, 255, 0.6);
     font-size: 0.95rem;
@@ -127,13 +123,19 @@ button:hover {
     margin-top: 10px;
 }
 
-/* Bottom bar */
 .footer-bottom {
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding: 20px 10px;
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-tech {
+  margin-top: 6px;
+  font-size: 0.85rem;
+  opacity: 0.7;
+  font-family: "Kalam", cursive;
 }
 
 @media screen and (max-width: 768px) {

@@ -27,11 +27,11 @@
     cursor: pointer;
     font-family: 'Anta';
     background-image: url("../animations/about_me.jpg");
-    background-size: 112%;
-    background-position: -27px 15px;
-    background-color: #725E97;
     background-repeat: no-repeat;
-    transition: background-size 0.4s ease, color 0.8s, background-position 0.4s ease;
+    background-color: #725E97;
+    background-size: contain;
+    background-position: center bottom;
+    transition: transform 0.4s ease, color 0.4s;
     overflow: hidden;
     border-radius: 5px;
     border: 4px solid white;
@@ -39,18 +39,17 @@
 }
 
 .about-me:hover {
-    background-size: 117%;
-    background-position: -37px 15px;
-    border: 4px solid #80fefe;
+  border: 4px solid #80fefe;
+  transform: scale(1.02);
 }
 
 .about-me:hover h1{
-    transform: scale(1.1);
-    color: #80fefe; /* or try #66fcf1 or #a0fefe */
+    transform: scale(1.02);
+    color: #80fefe;
 }
 
 h1 {
-    transition: transform 0.4s ease-in-out, color 0.8s;
+    transition: transform 0.4s ease, color 0.4s;
     margin-left: auto;
     margin-right: auto;
     font-size: 4.5rem;
@@ -58,41 +57,13 @@ h1 {
     margin-right: auto;
 }
 
-.about-me:hover video{
-    transform: scale(1.077);
-}
-
-.card-wrapper {
-  display: flex;
-  width: 30%;
-  text-decoration: none;
-}
-
-@media (max-width: 768px)  {
-    .card-wrapper {
-        display: block;
-        width: 100% !important;
-        max-width: 100% !important;
-        flex: 0 0 100%;
-    }
-    
-}
-
 @media (max-width: 480px) {
     .about-me {
         height: 500px;
-        background-size: 112%;  /*Fix this*/
-        background-position: -20px 40px;
     }
 
     .about-me h1 {
         font-size: 3.7rem;
-    }
-
-    .about-me:hover {
-        background-size: 117%;
-        background-position: -28px 50px;
-        border: 4px solid #80fefe;
     }
 }
 
@@ -100,17 +71,9 @@ h1 {
 @media screen and (min-width: 480px) and (max-width: 768px) {
     .about-me {
         height: 500px;
-        background-size: 55%; 
-        background-position: 154px 40px;
     }
 
     .about-me h1 {
         font-size: 3.7rem;
-    }
-
-    .about-me:hover {
-        background-size: 60%;
-        background-position: 136px 40px;
-        border: 4px solid #80fefe;
     }
 }

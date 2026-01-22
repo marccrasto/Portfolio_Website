@@ -112,22 +112,31 @@
   opacity: 0.85;
 }
 
-.club-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+.club-grid{
+  display: flex;
+  flex-wrap: wrap;
   gap: 28px;
-  align-items: start;
+  align-items: flex-start;
+}
+
+.club-left{
+  flex: 1 1 690px;
+  min-width: 0;
+}
+
+.club-right{
+  flex: 1 1 480px;
+  min-width: 0;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px; 
+  justify-content: flex-start; 
 }
 
 .club-grid.reverse {
-  grid-template-columns: 0.8fr 1.2fr;
-}
-
-.club-grid.reverse .club-left {
-  order: 2;
-}
-.club-grid.reverse .club-right {
-  order: 1;
+  flex-direction: row-reverse;
 }
 
 .club-block {
@@ -159,18 +168,14 @@
   padding-left: 18px;
 }
 
-/* Right image placeholder */
 .club-image {
   width: 100%;
-  height: 260px;              /* tweak if you want taller */
+  aspect-ratio: 3/1.625;
   border-radius: 16px;
   overflow: hidden;
-  display: flex;              /* helps with contain mode */
+  display: block;
   align-items: center;
   justify-content: center;
-
-  /* IMPORTANT: remove any white background if it exists */
-  background: transparent;
 }
 
 .club-image img {
@@ -179,6 +184,12 @@
   display: block;
 }
 
+@media (max-width: 980px) {
+  .club-right{
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
 
 
 .image-placeholder {
@@ -190,7 +201,6 @@
   opacity: 0.85;
 }
 
-/* Mini project card with hover overlay */
 .mini-card {
   margin-top: 10px;
 }
@@ -248,7 +258,6 @@
   font-size: 0.95rem;
 }
 
-/* Hover overlay */
 .mini-card-overlay {
   position: absolute;
   inset: 0;
@@ -302,31 +311,12 @@
   background: rgba(255, 255, 255, 0.14);
 }
 
-.club-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-/* responsive */
-@media (max-width: 980px) {
-  .club-grid,
-  .club-grid.reverse {
-    grid-template-columns: 1fr;
-  }
-
-  .club-grid.reverse .club-left,
-  .club-grid.reverse .club-right {
-    order: unset;
-  }
-}
-
 .project-strip {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-
+  width: 100%;
   margin-top: 1.5rem;
   padding: 1.4rem 1.6rem;
 
@@ -355,13 +345,11 @@
 
 .project-strip-right {
   width: 100%;
-  /*display: grid;
-  grid-template-columns: 1fr 1fr;*/
-  gap: 16px;
-  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
-/* existing icon button base */
 .project-icon-btn {
   display: flex;
   align-items: center;
@@ -399,22 +387,9 @@
   font-family: 'Kalam';
 }
 
-
 .project-icon-btn:hover {
   transform: translateY(-2px);
   border-color: #80fefe;
   box-shadow: 0 0 16px rgba(128, 254, 254, 0.25);
   cursor: pointer;
-}
-
-@media (max-width: 480px) {
-  .club-image {
-    height: 210px;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 768px) {
-    .club-image {
-      height: 350px;
-    }
 }

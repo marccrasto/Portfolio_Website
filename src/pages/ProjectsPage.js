@@ -53,7 +53,6 @@ class ProjectsPage extends React.Component {
   };
 
   render() {
-    // 4 clubs (placeholders). Swap text/images/links later.
     const clubs = [
       {
         clubName: "Western Developers' Society",
@@ -152,7 +151,7 @@ class ProjectsPage extends React.Component {
     return (
       <div className="welcome-container">
         <div className="topbar">
-          <div className="topbar left">
+          <div className="topbar-left">
             <button onClick={this.toggleNavbar} className='topbar-btn'>
               <FontAwesomeIcon key={this.state.navbar ? 'x' : 'bars'} className={`menu-icon`} icon={this.state.navbar ? faXmark : faBars}/>
             </button>
@@ -165,7 +164,6 @@ class ProjectsPage extends React.Component {
           </p>
         </div>
 
-        {/* Blur wrapper (includes content + footer + scroll button) */}
         <div className={`${this.state.navbar ? "blur" : ""}`}>
           <div className="work-page">
             <div className="work-header">
@@ -191,9 +189,7 @@ class ProjectsPage extends React.Component {
                   </div>
                 </div>
 
-                {/* 2-column layout */}
                 <div className={`club-grid ${idx % 2 === 1 ? "reverse" : ""}`}>
-                  {/* Left: text */}
                   <div className="club-left">
                     <div className="club-block">
                       <h3>{c.overviewTitle}</h3>
@@ -210,7 +206,6 @@ class ProjectsPage extends React.Component {
                     </div>
                   </div>
 
-                  {/* Right: image placeholder */}
                   <div className="club-right">
                     <div className='club-image'>
                       {c.image ? (
@@ -221,7 +216,6 @@ class ProjectsPage extends React.Component {
                         </div>
                       )}
                     </div>
-                    {/* Project strip (Option 2) */}
                     <div className="project-strip-right">
                       {c.projectCard.github !== '#' ? (<a
                         className="project-icon-btn wide"
@@ -241,16 +235,6 @@ class ProjectsPage extends React.Component {
                       >
                         Coming Soon
                       </a>)}
-                      {/*<a
-                        className="project-icon-btn wide"
-                        href={c.projectCard.demo}
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label="Live demo"
-                        title="Demo"
-                      >
-                        <FontAwesomeIcon icon={faPlay} />
-                      </a>*/}
                     </div>
                   </div>
                 </div>

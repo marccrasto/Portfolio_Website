@@ -47,12 +47,12 @@ class ResumePage extends React.Component {
   render() {
     
     const resumePdf = "/resume/resume.pdf";
-    const resumePreviewImage = "/resume/resume-preview.png"; // optional
+    const resumePreviewImage = "/resume/resume-preview.png";
 
     return (
       <div className="welcome-container">
         <div className="topbar">
-          <div className="topbar left">
+          <div className="topbar-left">
             <button onClick={this.toggleNavbar} className='topbar-btn'>
               <FontAwesomeIcon key={this.state.navbar ? 'x' : 'bars'} className={`menu-icon`} icon={this.state.navbar ? faXmark : faBars}/>
             </button>
@@ -65,7 +65,6 @@ class ResumePage extends React.Component {
           </p>
         </div>
 
-        {/* Blur wrapper includes content + footer + scroll button */}
         <div className={`${this.state.navbar ? "blur" : ""}`}>
           <div className="resume-page">
             <div className="resume-header" >
@@ -76,23 +75,18 @@ class ResumePage extends React.Component {
               </a>
             </div>
 
-            {/* Preview */}
             <div className="resume-preview-wrap">
-              {/* Option A: show a preview image (fast + clean) */}
               <img
                 className="resume-preview"
                 src={resumePreviewImage}
                 alt="Resume preview"
                 onError={(e) => {
-                  // If you haven't added resume-preview.png yet,
-                  // fallback to showing the PDF in an iframe.
                   e.currentTarget.style.display = "none";
                   const iframe = document.getElementById("resume-iframe");
                   if (iframe) iframe.style.display = "block";
                 }}
               />
 
-              {/* Option B: PDF iframe (hidden unless image fails) */}
               <iframe
                 id="resume-iframe"
                 title="Resume PDF"

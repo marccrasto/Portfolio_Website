@@ -60,7 +60,7 @@ class AboutPage extends React.Component {
     return (
       <div className="welcome-container">
         <div className="topbar">
-          <div className="topbar left">
+          <div className="topbar-left">
             <button onClick={this.toggleNavbar} className='topbar-btn'>
               <FontAwesomeIcon key={this.state.navbar ? 'x' : 'bars'} className={`menu-icon`} icon={this.state.navbar ? faXmark : faBars}/>
             </button>

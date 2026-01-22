@@ -78,7 +78,10 @@ class Footer extends React.Component {
                     </div>
                 </div>
                 <div className="footer-bottom">
-                    <p>© 2025 Marc Crasto. All rights reserved.</p>
+                    <p>© 2026 Marc Crasto. All rights reserved.</p>
+                    <p className="footer-tech">
+                        Built with React
+                    </p>
                 </div>
             </footer>
         );
