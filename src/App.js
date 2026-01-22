@@ -1,7 +1,7 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import React from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
@@ -9,7 +9,6 @@ import AboutMe from './components/About_me';
 import Projects from './components/Projects';
 import Academics from './components/Academic_work';
 import Footer from './components/Footer';
-import RouteEffects from "./components/Route_Effects";
 import AboutPage from './pages/AboutPage';
 import AcademicPage from "./pages/AcademicPage";
 import ProjectsPage from "./pages/ProjectsPage";
@@ -17,7 +16,7 @@ import ResumePage from "./pages/ResumePage"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-class AppInner extends React.Component {
+class App extends React.Component {
   constructor(props) {
     super(props);
 
@@ -122,17 +121,6 @@ class AppInner extends React.Component {
       </Routes>
     );
   } 
-}
-
-function App() {
-  const location = useLocation();
-
-  return (
-    <>
-      <RouteEffects />
-      <AppInner key={location.pathname} />
-    </>
-  );
 }
 
 export default App;

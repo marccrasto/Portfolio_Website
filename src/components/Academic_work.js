@@ -1,6 +1,5 @@
 import React from "react";
 import './Academic_work.css';
-import { Link } from "react-router-dom";
 
 
 class Academics extends React.Component {
@@ -10,11 +9,11 @@ class Academics extends React.Component {
 
     render() {
         return (
-            <Link to="/academic" className="card-wrapper">
+            <a href="#/academic" className="card-wrapper">
                 <div className="academics">
                     <h1>Academic Projects</h1> 
                 </div>
-            </Link>
+            </a>
         );
     }
 }
