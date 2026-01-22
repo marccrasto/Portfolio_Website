@@ -9,7 +9,7 @@ import AboutMe from './components/About_me';
 import Projects from './components/Projects';
 import Academics from './components/Academic_work';
 import Footer from './components/Footer';
-import RouteEffects from "./components/RouteEffects";
+import RouteEffects from "./components/Route_Effects";
 import AboutPage from './pages/AboutPage';
 import AcademicPage from "./pages/AcademicPage";
 import ProjectsPage from "./pages/ProjectsPage";
