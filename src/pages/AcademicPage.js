@@ -59,7 +59,7 @@ class ProjectsPage extends React.Component {
         subtitle: "AI-Assisted Learning Prototype",
         description:
           "A proof-of-concept AI-driven learning platform that gamifies textbooks by extracting content with OCR and generating progression logic and assessment questions using an LLM. The system demonstrates a Subway Surfers–style gameplay flow where players answer textbook-based questions through lane-based interactions.",
-        image: "/projects_pics/textquest.jpg",
+        image: process.env.PUBLIC_URL + "/projects_pics/textquest.jpg",
         github: "https://github.com/lblommesteyn/wds-rpg/tree/marc-crasto",
         demo: "#",
         tags: ["OCR", "LLM", "Game Design", "AI"],
@@ -69,7 +69,7 @@ class ProjectsPage extends React.Component {
         subtitle: "Data-Structure–Driven Game Logic",
         description:
           "A Java-based implementation of the classic Pac-Man game completed as a course assignment to demonstrate data structures in practice. The project uses a Binary Search Tree to manage game state and in-game entities, illustrating how fundamental structures like BSTs can be applied within game systems.",
-        image: "/projects_pics/pacman.jpg",
+        image: process.env.PUBLIC_URL + "/projects_pics/pacman.jpg",
         github: "https://github.com/marccrasto/Pac-Man",
         demo: "#",
         tags: ["Java", "Data Structures"],
@@ -79,7 +79,7 @@ class ProjectsPage extends React.Component {
         subtitle: "Configurable Grid Game with State Evaluation",
         description:
           "A two-player strategy game, featuring variable board sizes, blocked cells, and turn-based tile placement on a square grid. The game supports configurable win conditions, draw detection, and state evaluation through string encodings and a hash table that stores the value of each tile on the grid",
-        image: "/projects_pics/inarow.jpg",
+        image: process.env.PUBLIC_URL + "/projects_pics/inarow.jpg",
         github: "https://github.com/marccrasto/InARow",
         demo: "#",
         tags: ["Algorithms", "Game Logic", "JavaScript"],
@@ -89,7 +89,7 @@ class ProjectsPage extends React.Component {
         subtitle: "Reducing Cognitive Load in Task Tracking",
         description:
           "A collaborative task management application inspired by Kanban workflows and grounded in core Human–Computer Interaction principles for usability-focused design decisions and workflow clarity. The system supports task creation, prioritization, and progress tracking through an interface to reduce cognitive load.",
-        image: "/projects_pics/taskly.jpg",
+        image: process.env.PUBLIC_URL + "/projects_pics/taskly.jpg",
         github: "https://github.com/marccrasto/Taskly",
         demo: "#",
         tags: ["HCI", "Full Stack", "JavaScript", "UI/UX"],
@@ -99,7 +99,7 @@ class ProjectsPage extends React.Component {
         subtitle: "Distributed Systems with gRPC",
         description:
           "A distributed group chat system built using gRPC to enable real-time communication across multiple users within a networked client–server architecture and message-driven design. The project focuses on concurrency, synchronization, and reliable delivery while demonstrating core distributed systems principles clearly.",
-        image: "/projects_pics/chatsystem.jpg",
+        image: process.env.PUBLIC_URL + "/projects_pics/chatsystem.jpg",
         github: "https://github.com/marccrasto/Group_Chat_Messaging_Service",
         demo: "#",
         tags: ["Distributed Systems", "gRPC", "Networking"],
@@ -109,7 +109,7 @@ class ProjectsPage extends React.Component {
         subtitle: "Predicting Crash Severity with ML",
         description:
           "A machine learning project that predicts traffic accident severity levels using collision data and supervised classification techniques for decision-support analysis tasks at scale. The model incorporates environmental context such as weather, road conditions, lighting, and time to inform decisions.",
-        image: "/projects_pics/trafficseverity.png",
+        image: process.env.PUBLIC_URL + "/projects_pics/trafficseverity.png",
         github: "https://github.com/marccrasto/Traffic_Accident_Severity",
         demo: "#",
         tags: ["Machine Learning", "Classification"],

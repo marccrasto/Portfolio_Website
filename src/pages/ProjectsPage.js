@@ -57,7 +57,7 @@ class ProjectsPage extends React.Component {
       {
         clubName: "Western Developers' Society",
         roleLine: "Machine Learning Developer · Sep 2025 – Apr 2026",
-        image: "/projects_pics/westerndevsociety.jpg",
+        image: process.env.PUBLIC_URL + "/projects_pics/westerndevsociety.jpg",
         overviewTitle: "Overview",
         overview:
           "Developing a vision–language model (VLM) for NSFW detection in 3D printing workflows",
@@ -80,7 +80,7 @@ class ProjectsPage extends React.Component {
       {
         clubName: "Western Cyber Society",
         roleLine: "Full-Stack Developer · Sep 2025 – Apr 2026",
-        image: "/projects_pics/westerncybersociety.jpg",
+        image: process.env.PUBLIC_URL + "/projects_pics/westerncybersociety.jpg",
         overviewTitle: "Overview",
         overview:
           "Building a full-stack skin cancer detection application",
@@ -103,7 +103,7 @@ class ProjectsPage extends React.Component {
       {
         clubName: "Western Developers' Society",
         roleLine: "Machine Learning Developer · Sep 2024 – Apr 2025",
-        image: "/projects_pics/westerndevsociety.jpg",
+        image: process.env.PUBLIC_URL + "/projects_pics/westerndevsociety.jpg",
         overviewTitle: "Overview",
         overview:
           "Worked in a Scrum team of 7 to develop a real-time transit app for London, Ontario",
@@ -126,7 +126,7 @@ class ProjectsPage extends React.Component {
       {
         clubName: "Western AI",
         roleLine: "Front-end Developer · Sep 2023 – Apr 2024",
-        image: "/projects_pics/westernuai.jpg",
+        image: process.env.PUBLIC_URL + "/projects_pics/westernuai.jpg",
         overviewTitle: "Overview",
         overview:
           "Designed the UI for a financial forecasting web app",
