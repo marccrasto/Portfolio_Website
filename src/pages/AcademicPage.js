@@ -82,7 +82,7 @@ class ProjectsPage extends React.Component {
         image: process.env.PUBLIC_URL + "/projects_pics/inarow.jpg",
         github: "https://github.com/marccrasto/InARow",
         demo: "#",
-        tags: ["Algorithms", "Game Logic", "JavaScript"],
+        tags: ["Java", "Algorithms", "Game Logic"],
       },
       {
         title: "Taskly",
@@ -92,7 +92,7 @@ class ProjectsPage extends React.Component {
         image: process.env.PUBLIC_URL + "/projects_pics/taskly.jpg",
         github: "https://github.com/marccrasto/Taskly",
         demo: "#",
-        tags: ["HCI", "Full Stack", "JavaScript", "UI/UX"],
+        tags: ["HCI", "Full Stack", "UI/UX"],
       },
       {
         title: "Group Chat Messaging Service",
